@@ -12,7 +12,7 @@ for (let a = 0,
              test: true
          },
          blockScope = 0; blockScope < 1; blockScope++) {
-             // logic in this block
+             // logic in this block scope
              console.log(a, b, c);
 }
 
