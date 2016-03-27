@@ -3,7 +3,7 @@ var path = require('path');
 var gulp = require('gulp');
 var debug = require('gulp-debug');
 var babel = require('gulp-babel');
-var runSequence = require('run-sequence').use(gulp);
+// var runSequence = require('run-sequence').use(gulp);
 
 // Transpiling
 gulp.task('transpiling', function () {
@@ -20,5 +20,5 @@ gulp.task('transpiling', function () {
 gulp.task('default', ['transpiling']);
 
 gulp.task('watch', function() {
-    gulp.watch(['./src/**/*'], ['default']);
+    gulp.watch(['./**/*.js'], ['default']);
 });

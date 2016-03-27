@@ -6,14 +6,13 @@
  */
 'use strict';
 
-for (let a = 0,
-         b = '42',
-         c = {
-             test: true
-         },
-         blockScope = 0; blockScope < 1; blockScope++) {
-             // logic in this block scope
-             console.log(a, b, c);
+for ( let a = 0,
+          b = '42',
+          c = { test: true },
+          blockScope = 0; 
+      blockScope < 1; blockScope++) {
+	      // logic in this block scope
+	      console.log(a, b, c);   // variables in this scope
 }
 
-console.log(a);    // Referrence Error
+console.log(a);
